@@ -1,5 +1,14 @@
+import { Fragment } from "react";
+import Hero from "../components/global/hero";
+import FeaturedPosts from "../components/posts/featured-posts";
+
 function HomePage() {
-  return (<h1>Hello</h1>);
+  return (
+    <Fragment>
+      <Hero />
+      <FeaturedPosts />
+    </Fragment>
+  );
 }
 
 export default HomePage;
