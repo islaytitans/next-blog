@@ -1,9 +1,10 @@
 import classes from "./featured-posts.module.css";
+import PostsGrid from "./posts-grid";
 
-function FeaturedPosts() {
+function FeaturedPosts(props) {
   return (<section className={classes.latest}>
     <h2>Featured Posts</h2>
-    A list of posts
+    <PostsGrid posts={props.posts} />
   </section>)
 }
 
